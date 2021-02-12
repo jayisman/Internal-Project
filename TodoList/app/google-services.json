@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "697302832387",
+    "firebase_url": "https://data-planner-default-rtdb.firebaseio.com",
+    "project_id": "data-planner",
+    "storage_bucket": "data-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697302832387:android:c07e7c2d95464f2dd6c536",
+        "android_client_info": {
+          "package_name": "com.example.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697302832387-9c02hnbqg1c33g1d5m8j5c1c681m7bfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCujkE3wS_EDfULKP_BqnxXB8oo4aFC2lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697302832387-9c02hnbqg1c33g1d5m8j5c1c681m7bfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
