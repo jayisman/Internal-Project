@@ -17,7 +17,7 @@ import com.example.todolist.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3, R.string.tab_text_4};
     private final Context mContext;
     private int tabCount = TAB_TITLES.length;
 
@@ -29,16 +29,26 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        switch(position){
+            case 0:
+                return new ActiveMeetingsFragment();
+            case 1:
+                return new ScheduleFragment();
+            case 2:
+                return new HistoryFragment();
+            case 3:
+                return new SettingsFragment();
+            default:
+                return null;
+        }
     }
-
+/*
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         return mContext.getResources().getString(TAB_TITLES[position]);
     }
-
+ */
     @Override
     public int getCount() {
         // Show Total Tab count.

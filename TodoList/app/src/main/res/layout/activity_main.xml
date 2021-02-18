@@ -25,7 +25,33 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
+            android:background="?attr/colorPrimary" >
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Meetings" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule a Meeting" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings" />
+
+        </com.google.android.material.tabs.TabLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
